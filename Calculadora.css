@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%27");
+
+
+body, html{
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  
+}
+
+#contenedor{
+  width: 200px;
+  height: 50px;
+  border: 1px solid orange;
+  padding: 10px;
+  margin: 5px;
+}
+
+.linea {
+  background-color: black;
+}
+
+.linea button {
+  background-color: transparent;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  padding: 3px;
+  padding-left: 15px;
+}
+
+.linea.linea-encabezado button {
+  color: orange;
+}
+
+.linea.linea-cuerpo button {
+  color: white;
+}
+
+.linea.linea-cuerpo button:last-child {
+  color: orange;
+}
+
+.linea.linea-cuerpo.ultimo-redondeado button:last-child {
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+
+/*
+
+FLEXBOX       =>    siempre trabaja en una dimensión
+
+<div> flex direction row
+<div> flex direction column, justify content, align items
+x
+x
+x
+x
+</div>
+</div>
+
+
+x
+x
+x
+x
+
+
+GRID        =>    siempre trabaja en 2 dimensiones
+
+<div>  
+x
+x
+x
+x
+</div>
+
+x x
+x x
+
+*/

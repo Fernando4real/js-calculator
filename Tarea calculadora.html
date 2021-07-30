@@ -7,40 +7,31 @@
     <title>Calculadora</title>
 
     <link rel="stylesheet" type="text/css" href="Calculadora.css">
+    <link rel="stylesheet" type="text/css" href="./grid.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <div id="contenedor">
-    
-    </div>
-    <div class="linea linea-encabezado">
-        <button><span>AC </span></button>
-        <button><span>C </span></button>
-        <button><span>% </span></button>
-        <button><span>/ </span></button>
-    </div>
-    <div class="linea linea-cuerpo">
-        <button><span>7 </span></button>
-        <button><span>8 </span></button>
-        <button><span>9 </span></button>
-        <button><span>X </span></button>
-    </div>
-    <div class="linea linea-cuerpo">
-        <button><span>4 </span></button>
-        <button><span>5 </span></button>
-        <button><span>6 </span></button>
-        <button><span>- </span></button>
-    </div>
-    <div class="linea linea-cuerpo">
-        <button><span>1 </span></button>
-        <button><span>2 </span></button>
-        <button><span>3 </span></button>
-        <button><span>+ </span></button>     
-    </div>
-    <div class="linea linea-cuerpo ultimo-redondeado">
-        <button><span>e </span></button>
-        <button><span>0 </span></button>
-        <button><span>. </span></button>
-        <button><span>=</span></button>     
-    </div>
+  <div id="calculadora">
+    <div id="resultado">0</div>
+    <button id="AC" class="operation" onclick="AC()">AC</button>
+    <button id="DEL" class="operation" onclick="DEL()">DEL</button>
+    <button id="percent" class="operation" onclick="perc()">%</button>
+    <button id="divid" class="operation" onclick="fordisplay('/')">/</button>
+    <button id="seven"class= "number" value="7" onclick="fordisplay('7')">7</button>
+    <button id="eight" class= "number" value="8" onclick="fordisplay('8')">8</button>
+    <button id="nine" class="number" value="9" onclick="fordisplay('9')">9</button>
+    <button id="multiply" class="operation" value="X" onclick="fordisplay('*')">X</button>
+    <button id="four" class="number" value="4" onclick="fordisplay('4')">4</button>
+    <button id="five" class="number" value="5" onclick="fordisplay('5')">5</button>
+    <button id="six" class="number" value="6" onclick="fordisplay('6')">6</button>
+    <button id="minus" class="operation" value="-" onclick="fordisplay('-')">-</button>
+    <button id="one" class="number" value="1" onclick="fordisplay('1')">1</button>
+    <button id="two" class="number" value="2" onclick="fordisplay('2')">2</button>
+    <button id="three" class="number" value="3" onclick="fordisplay('3')">3</button>
+    <button id="plus" class="operation" value="+" onclick="fordisplay('+')">+</button>
+    <button id="zero" class="number" value="0" onclick="fordisplay('0')">0</button>
+    <button id="point" class="number" value="." onclick="fordisplay('.')">.</button>
+    <button id="result" class="operation" onclick="resolve()">=</button>
+  </div>
 </body>
 </html>
